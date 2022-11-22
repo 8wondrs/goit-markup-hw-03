@@ -222,6 +222,7 @@ ul {
 .features-examples {
 	display: inherit;
 	text-align: center;
+	padding-top: 0;
 }
 
 .features-desc,
