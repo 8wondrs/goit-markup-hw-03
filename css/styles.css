@@ -35,9 +35,16 @@ ul {
 	padding: 0;
 }
 
+.page-header {
+	width: 1440px;
+	margin: 0 auto;
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
 /* Логотип */
 .logo {
-	/* display: block; */
+	display: block;
 	padding: 24px 0;
 	margin-right: 77px;
 	color: var(--heading-color);
@@ -55,6 +62,11 @@ ul {
 
 .logo:hover,
 .logo.footer:hover {
+	color: var(--body-color);
+}
+
+.logo:focus,
+.logo.footer:focus {
 	color: var(--body-color);
 }
 
@@ -124,10 +136,31 @@ ul {
 	cursor: pointer;
 }
 
+.hero .button {
+	width: 170px;
+	height: 51px;
+}
+
 .button:hover,
 .button:focus {
 	color: #FFFFFF;
+	border: 1px solid transparent;
 	background-color: var(--brand-color);
+}
+
+/* Кнопки фильтра */
+.filter-buttons {
+	display: flex;
+}
+
+.filter-buttons .button {
+	padding: 12px 24px;
+}
+
+.filter-buttons.section {
+	padding-top: 96px;
+	padding-bottom: 72px;
+	margin: 0 auto;
 }
 
 /* H1 title*/
@@ -137,6 +170,9 @@ ul {
 	font-weight: 600;
 	line-height: 1.07;
 	margin-bottom: 48px;
+	width: 492px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* H2 titles */
@@ -190,7 +226,6 @@ ul {
 	padding: 0 15px;
 	margin: 0 auto;
 	align-items: center;
-	/* outline: 2px solid tomato; */
 }
 
 .section {
@@ -215,8 +250,63 @@ ul {
 
 .features-list .item+.item,
 .examples-list .item+.item,
-.team-list .item+.item {
+.team-list .item+.item,
+.filter-buttons .item+.item {
 	margin-left: 24px;
+}
+
+/* Карточки */
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-cards .image {
+	max-width: 100%;
+}
+
+.project-cards .card {
+	flex-basis: calc((100% - 48px) / 3);
+	width: 360px;
+	margin-right: 24px;
+	margin-bottom: 48px;
+	border: 0.5px solid #F4F4FD;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-cards .card:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.project-cards .card:nth-last-child(-n + 3) {
+	margin-bottom: 0px;
+}
+
+.project-cards.section {
+	padding-top: 0px;
+}
+
+.project-cards .image,
+.project-cards .text {
+	margin-bottom: 32px;
+}
+
+.project-cards .title,
+.project-cards .text {
+	margin-left: 16px;
+}
+
+/* Костыль-заглушка для второй карточки */
+/* .project-cards .block {
+	background-color: var(--brand-color);
+	width: 360px;
+	height: 300px;
+} */
+
+.project-cards .card:hover,
+.project-cards .card:focus {
+	border: 0.5px solid #F4F4FD;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .features-examples {
