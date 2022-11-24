@@ -191,7 +191,6 @@ ul {
 	letter-spacing: 0.02em;
 }
 
-/* Флексбокс */
 .flex {
 	display: flex;
 }
@@ -274,7 +273,6 @@ ul {
 /* Временная заглушка карточки */
 .project-cards .block {
 	background-color: var(--brand-color);
-	width: 360px;
 	height: 300px;
 	margin-bottom: 32px;
 }
