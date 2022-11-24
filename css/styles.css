@@ -93,7 +93,6 @@ ul {
 }
 
 /* Контакты */
-
 .menu-contacts {
 	margin-left: 331px;
 }
@@ -139,7 +138,6 @@ ul {
 	background-color: var(--brand-color);
 }
 
-
 .filter-buttons .button {
 	padding: 12px 24px;
 }
@@ -151,6 +149,8 @@ ul {
 	justify-content: center;
 }
 
+
+/* ЗАГОЛОВКИ */
 /* H1 title*/
 .hero .heading {
 	color: #FFFFFF;
@@ -189,22 +189,6 @@ ul {
 	color: var(--body-color);
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-}
-
-/* Футер */
-.logo.footer {
-	display: block;
-	padding: 0;
-	color: #F4F4FD;
-	line-height: 1.16;
-	margin-bottom: 16px;
-}
-
-.text.footer {
-	color: #E7E9FC;
-	line-height: 1.5;
-	width: 264px;
-
 }
 
 /* Флексбокс */
@@ -287,12 +271,18 @@ ul {
 	margin-left: 16px;
 }
 
-/* Костыль-заглушка для второй карточки */
-/* .project-cards .block {
+/* Временная заглушка карточки */
+.project-cards .block {
 	background-color: var(--brand-color);
 	width: 360px;
 	height: 300px;
-} */
+	margin-bottom: 32px;
+}
+
+.card .text-tmp {
+	color: #F4F4FD;
+	padding: 40px 34px 164px;
+}
 
 .project-cards .card:hover,
 .project-cards .card:focus {
@@ -331,4 +321,19 @@ ul {
 
 .page-footer.section {
 	padding: 100px 156px;
+}
+
+.logo.footer {
+	display: block;
+	width: 115px;
+	padding: 0;
+	color: #F4F4FD;
+	line-height: 1.16;
+	margin-bottom: 16px;
+}
+
+.text.footer {
+	color: #E7E9FC;
+	line-height: 1.5;
+	width: 264px;
 }
