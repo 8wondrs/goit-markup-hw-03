@@ -35,6 +35,21 @@ ul {
 	padding: 0;
 }
 
+.container {
+	width: 1158px;
+	padding: 0 15px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.section {
+	padding: 120px 0;
+}
+
 /* Хедер */
 .page-header {
 	width: 1440px;
@@ -138,17 +153,15 @@ ul {
 	background-color: var(--brand-color);
 }
 
-.filter-buttons .button {
-	padding: 12px 24px;
-}
-
-.filter-buttons.section {
-	padding-top: 96px;
-	padding-bottom: 72px;
-	margin: 0 auto;
+.filter-buttons {
+	margin-bottom: 72px;
+	align-items: center;
 	justify-content: center;
 }
 
+.filter-buttons .button {
+	padding: 12px 24px;
+}
 
 /* ЗАГОЛОВКИ */
 /* H1 title*/
@@ -191,19 +204,16 @@ ul {
 	letter-spacing: 0.02em;
 }
 
-.flex {
-	display: flex;
+/* Наша команда */
+.team-list .block,
+.project-cards .block {
+	padding: 32px 0;
 }
 
-.container {
-	width: 1158px;
-	padding: 0 15px;
-	margin: 0 auto;
-	align-items: center;
-}
-
-.section {
-	padding: 120px 0;
+.examples-list .image,
+.team-list .image,
+.project-cards .image {
+	display: block;
 }
 
 .page-hero {
@@ -230,6 +240,10 @@ ul {
 }
 
 /* Карточки */
+.portfolio.section {
+	padding: 96px 0 120px;
+}
+
 .project-cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -256,25 +270,15 @@ ul {
 	margin-bottom: 0px;
 }
 
-.project-cards.section {
-	padding-top: 0px;
-}
-
-.project-cards .image,
-.project-cards .text {
-	margin-bottom: 32px;
-}
-
 .project-cards .title,
 .project-cards .text {
 	margin-left: 16px;
 }
 
 /* Временная заглушка карточки */
-.project-cards .block {
+.project-cards .block-tmp {
 	background-color: var(--brand-color);
-	height: 300px;
-	margin-bottom: 32px;
+	height: 298px;
 }
 
 .card .text-tmp {
